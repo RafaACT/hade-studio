@@ -20,7 +20,7 @@ export const Navbar = () => {
                         <Link href={'/services'} legacyBehavior><a className='link'>Services</a></Link>
                     </li>
                     <li className='buttons'>
-                        <Link href={'/make-appointment'} legacyBehavior><a className='link'>Make an appoinment</a></Link>
+                        <Link href={'https://hadesstudio.setmore.com/?instant_experiences_enabled=true'} legacyBehavior><a className='link'>Make an appoinment</a></Link>
                     </li>
                     <li className='buttons'>
                         <Link href={'/about-us'} legacyBehavior><a className='link'>About us</a></Link>
