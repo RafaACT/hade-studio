@@ -1,18 +1,17 @@
 import React from "react";
+import {Navbar} from "../navbar/navbar";
 
 export const Main = ({children}:any) => {
 
     return(
-        <div>
-            <nav>
-                hello
-            </nav>
-            <div>
+        <>
+            <Navbar />
+            <main>
                 {children}
-            </div>
+            </main>
             <footer>
-                hade studio
+                <p>© 2022 Hade Studio - A project built with Next.JS</p>
             </footer>
-        </div>
+        </>
     )
 }
