@@ -1,5 +1,6 @@
 import React from "react";
 import {Navbar} from "../navbar/navbar";
+import { Footer } from "../footer/footer";
 
 export const Main = ({children}:any) => {
 
@@ -9,9 +10,7 @@ export const Main = ({children}:any) => {
             <main>
                 {children}
             </main>
-            <footer>
-                <p>© 2022 Hade Studio - A project built with Next.JS</p>
-            </footer>
+            <Footer />
         </>
     )
 }
