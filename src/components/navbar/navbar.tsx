@@ -6,13 +6,14 @@ export const Navbar = () => {
     return(
         <header>
             <div className='topnav'>
+                <Image 
+                    src='/' 
+                    alt='insert hade here' 
+                    width={20}
+                    height={20} 
+                    className={'image'}
+                />
                 <ul className='nav'>
-                    <Image 
-                        src='/' 
-                        alt='insert hade here' 
-                        width={20}
-                        height={20} 
-                    />
                     <li className='buttons'>
                         <Link href={'/'} legacyBehavior><a className='link'>Home</a></Link>
                     </li>
