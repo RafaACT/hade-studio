@@ -16,10 +16,10 @@ export const Navbar = () => {
         <header>
             <div className='topnav'>
                 <Image 
-                    src='/' 
+                    src='/hade-studio2.png' 
                     alt='insert hade here' 
-                    width={20}
-                    height={20} 
+                    width={60}
+                    height={60} 
                 />
                 <ul className={isClicked ? "nav" : 'nav active'}>
                     <Link href={'/'} legacyBehavior>
