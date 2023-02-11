@@ -11,7 +11,7 @@ export default function Service({data}:any) {
 }
 
 export async function getStaticProps() {
-    const {services} = await import('../data/services.json')
+    const {services} = await import('../data/data.json')
 
     return{
         props:{

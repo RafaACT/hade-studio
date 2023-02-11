@@ -77,19 +77,35 @@ footer
     .logo
         max-width: 700px
         max-height: 700px
-    .content
-        display: flex
-        justify-content: center
+        width: 100%
+        height: auto
+    .odd
+        &:nth-child(even)
+            direction: rtl
+
+.content
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 30vh
+    text-align: center
+    .slider
+        text-align: center
+
+    .description
+
    
    
    
 .image-slider
-    height: 80px
-    width: 80px
+    height: 100%
+    width: 100%
     .next
-        position: fixed
+        position: relative
+        bottom: 90px
     .previous
-        position: fixed
+        position: relative
+        bottom: 90px
     .image
         height: 200px
         width: 200px

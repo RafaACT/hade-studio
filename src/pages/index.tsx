@@ -4,7 +4,7 @@ import Landing from '@/components/landing-page/landing'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({data}:any) {
+export default function Home({job, studio}:any) {
   return (
     <>
       <Head>
@@ -14,18 +14,19 @@ export default function Home({data}:any) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Landing image={data} />
+        <Landing job={job} studio={studio} />
       </div>
     </>
   )
 }
 
 export async function getStaticProps() {
-  const {image} = await import('../data/images.json')
+  const {job, studio } = await import('../data/data.json')
 
   return{
       props:{
-          data: image,
+          job: job,
+          studio: studio
       }
   }
 }
