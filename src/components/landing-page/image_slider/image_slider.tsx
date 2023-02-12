@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import IconButton from "@mui/material/IconButton";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const ImageSlider = ({ images }:any) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -21,13 +24,13 @@ const ImageSlider = ({ images }:any) => {
 
   return (
     <div className="image-slider">
-      <button className="previous" onClick={previousImage}>
-        Previous
-      </button>
+      <IconButton className="buttons" onClick={previousImage}>
+        <ArrowBackIosIcon />
+      </IconButton>
       <img src={images[currentImageIndex]} alt="" className="image"/>
-      <button className="next" onClick={nextImage}>
-        Next
-      </button>
+      <IconButton className="buttons" onClick={nextImage}>
+        <ArrowForwardIosIcon />
+      </IconButton>
     </div>
   );
 };

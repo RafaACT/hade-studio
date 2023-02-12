@@ -6,18 +6,17 @@ export const Services = ({data}:any) => {
     return(
         <div className="service-container">
             {data.map((service: any) => (
-                <div className="box">
-                <Grid container>
+                <Grid container className="box">
                     <Grid item sm={4} className={'image'}>
                         <Image src={service.image} alt={'doesnt work'} width={100} height={100} className={'image'}/>
                     </Grid>
-                    <Grid item sm={8} className={'description'}>
-                        <Grid container>
+                    <Grid item sm={8}>
+                        <Grid container className='description'>
                             <Grid>
                                 <h2 className="name">{service.name}</h2>
                             </Grid>
                             <Grid>
-                                <p className="description">{service.description}</p>
+                                <p>{service.description}</p>
                             </Grid>
                             <Grid>
                                 <h3 className="price">{service.price}</h3>
@@ -25,7 +24,6 @@ export const Services = ({data}:any) => {
                         </Grid>
                     </Grid>
                 </Grid>
-                </div>
             )
             )}  
         </div>

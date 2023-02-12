@@ -11,9 +11,8 @@ body
     text-align: center
     font-size: 5em
 
-    
 .topnav
-    height:60px
+    height: 60px
     background-color: #333
     width: 100%
     margin: 0px
@@ -36,52 +35,36 @@ body
     .mobile
         display: none
 
-footer 
-  position: fixed
-  bottom: 0px
-  margin-top: auto
-  width: 100%
-  height: 30px
-  background-color: #333
-  color: #fff
-  padding: 0px
-  margin: 0px
-  display: flex
-  align-items: center
-  justify-content: center
-
-.service-container
+footer
+    position: fixed
+    bottom: 0px
+    margin-top: auto
+    width: 100%
+    height: 30px
+    background-color: #333
+    color: #fff
+    padding: 0px
+    margin: 0px
     display: flex
-    flex-direction: column
-    justify-content: center
     align-items: center
-    gap:100px
-    margin-bottom: 50px
-    .box
-        display: flex
-        height: 15%
-        width: 60%
-        .image
-            display: flex
-            justify-content: center
-            align-items: center
-        .description
-            display: flex
-            justify-content: center
-            align-items: center
-            gap: 20px
+    justify-content: center
+
+//main content
+
 .landing
     display: flex
     flex-direction: column
     align-items: center
-    .logo
-        max-width: 700px
-        max-height: 700px
-        width: 100%
-        height: auto
-    .odd
-        &:nth-child(even)
-            direction: rtl
+    margin-bottom: 25px
+.logo
+    max-width: 700px
+    max-height: 700px
+    width: 100%
+    height: auto
+
+.odd
+    &:nth-child(even)
+        direction: rtl
 
 .content
     display: flex
@@ -92,26 +75,45 @@ footer
     .slider
         text-align: center
 
-    .description
-
-   
-   
-   
 .image-slider
     height: 100%
     width: 100%
-    .next
-        position: relative
-        bottom: 90px
-    .previous
-        position: relative
-        bottom: 90px
+    direction: initial
+    display: flex
+    align-items: center
+    justify-content: center
     .image
-        height: 200px
-        width: 200px
-   
-   
-   
+        max-width: 300px
+        max-height: 300px
+        height: auto
+        border-radius: 25px
+
+
+//services
+
+
+.service-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 50px
+    margin-top: 50px
+    margin-bottom: 50px
+    .box
+        width: 60%
+        display: flex
+        justify-content: center
+        .image
+            display: flex
+            justify-content: center
+            align-items: center
+            border-radius: 25px
+        .description
+            display: flex
+            justify-content: center
+            text-align: center
+            gap: 10px
+
         // background-color: #959595
         // border: solid 2px #717171
         // border-radius: 100px
