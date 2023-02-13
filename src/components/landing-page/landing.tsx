@@ -4,7 +4,7 @@ import { Content } from './content/content'
 
 export default function Landing({job, studio}:any) {
     return(
-        <div className="landing">
+        <div className="landing-container">
             <Image 
                 className='logo'
                 src='/hade-studio2.png' 
