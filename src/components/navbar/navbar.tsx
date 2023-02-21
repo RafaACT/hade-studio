@@ -15,12 +15,17 @@ export const Navbar = () => {
     return(
         <header>
             <div className='topnav'>
-                <Image 
-                    src='/hade-studio2.png' 
-                    alt='insert hade here' 
-                    width={60}
-                    height={60} 
-                />
+                <h1></h1>
+                <div className='name'>
+                    <Image 
+                        className='logo'
+                        src='/hade-studio2.png' 
+                        alt='insert hade here' 
+                        width={60}
+                        height={60} 
+                        />
+                    <h1>Hade Studio</h1>
+                </div>
                 <ul className={isClicked ? "nav" : 'nav active'}>
                     <Link href={'/'} legacyBehavior>
                         <li className='buttons' onClick={handleClick}>
@@ -37,11 +42,11 @@ export const Navbar = () => {
                             <a className='link'>Appointments</a>
                         </li>
                     </Link>
-                    <Link href={'/about-us'} legacyBehavior>
+                    {/* <Link href={'/about-us'} legacyBehavior>
                         <li className='buttons' onClick={handleClick}>
                             <a className='link'>About us</a>
                         </li>
-                    </Link>
+                    </Link> */}
                 </ul>
                 <div className='mobile' onClick={handleClick}>
                     {isClicked ? <CloseIcon className='icon'/>: <MenuIcon className='icon'/> }

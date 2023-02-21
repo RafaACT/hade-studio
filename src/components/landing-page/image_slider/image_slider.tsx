@@ -24,11 +24,11 @@ const ImageSlider = ({ images }:any) => {
 
   return (
     <div className="image-slider">
-      <IconButton className="buttons" onClick={previousImage}>
+      <IconButton className="button-left" onClick={previousImage}>
         <ArrowBackIosIcon />
       </IconButton>
       <img src={images[currentImageIndex]} alt="" className="image"/>
-      <IconButton className="buttons" onClick={nextImage}>
+      <IconButton className="button-right" onClick={nextImage}>
         <ArrowForwardIosIcon />
       </IconButton>
     </div>

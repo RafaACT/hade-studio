@@ -7,10 +7,10 @@ export const Content = ({data}:any) => {
     return(
         <div className="odd">
             <Grid container className="content">
-                <Grid item md={4} className='slider' >
+                <Grid item md={6} className='slider' >
                     <ImageSlider images={data.images} />
                 </Grid>
-                <Grid item md={4} className='description'>
+                <Grid item md={6} className='description'>
                     <h3>{data.name}</h3>
                     <p>{data.description}</p>
                 </Grid>
