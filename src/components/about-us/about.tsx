@@ -45,7 +45,7 @@ export default function About() {
                 </Grid>
             </Grid>
             <h1>Contact me!</h1>
-            <Link href={'/'} legacyBehavior>
+            <Link href={'https://instagram.com/hade_sstudio?igshid=YmMyMTA2M2Y='} legacyBehavior>
                 <InstagramIcon className="icon"/>
             </Link>
         </div>

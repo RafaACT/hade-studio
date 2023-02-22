@@ -24,7 +24,6 @@ export const Navbar = () => {
                         width={60}
                         height={60} 
                         />
-                    <h1>Hade Studio</h1>
                 </div>
                 <ul className={isClicked ? "nav" : 'nav active'}>
                     <Link href={'/'} legacyBehavior>
