@@ -1,19 +1,13 @@
 import React from "react";
-import Image from "next/image";
 import { Content } from './content/content'
 import About from "../about-us/about";
+import { Main } from "@/interfaces/interfaces";
 
-export default function Landing({job, studio}:any) {
+export default function Landing({job, studio}:Main) {
     return(
         <div className="landing-container">
-            {/* <Image 
-                className='logo'
-                src='/hade-studio2.png' 
-                alt='insert hade here' 
-                width={3375}
-                height={3329}/> */}
-                <Content data={job[0]}/>
-                <Content data={studio[0]}/>
+                <Content data={job}/>
+                <Content data={studio}/>
                 <About />
         </div>
     )

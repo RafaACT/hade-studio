@@ -15,16 +15,14 @@ export const Navbar = () => {
     return(
         <header>
             <div className='topnav'>
-                <h1></h1>
-                <div className='name'>
-                    <Image 
-                        className='logo'
-                        src='/hade-studio2.png' 
-                        alt='insert hade here' 
-                        width={60}
-                        height={60} 
-                        />
-                </div>
+                <div></div>
+                <Image 
+                    className='logo'
+                    src='/hade-studio2.png' 
+                    alt='insert hade here' 
+                    width={60}
+                    height={60} 
+                    />
                 <ul className={isClicked ? "nav" : 'nav active'}>
                     <Link href={'/'} legacyBehavior>
                         <li className='buttons' onClick={handleClick}>

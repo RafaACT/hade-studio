@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import Landing from '@/components/landing-page/landing'
+import { Main, MainData } from '@/interfaces/interfaces'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({job, studio}:any) {
+export default function Home({job, studio}:Main) {
   return (
     <>
       <Head>
@@ -25,8 +26,8 @@ export async function getStaticProps() {
 
   return{
       props:{
-          job: job,
-          studio: studio
+          job: job[0],
+          studio: studio[0]
       }
   }
 }
